@@ -47,15 +47,29 @@ for index, row in df_filtered.iterrows():
 # Open this file to view an interactive map of all the locations (besides outliers)    
 map.save("sf_parks_map.html")
 
+# For outlier removed data
 coords = df_filtered[['latitude', 'longitude']].dropna()
 
-# Use K means clustering for the locations
+# Use K means clustering for the locations with removed outliers
 kmeans = KMeans(n_clusters=5, random_state=42)
 coords['cluster'] = kmeans.fit_predict(coords)
 
-# Plot clusters
+# Plot clusters after outlier removal
 plt.figure(figsize=(10, 6))
 sns.scatterplot(x=coords['longitude'], y=coords['latitude'], hue=coords['cluster'], palette='viridis')
+plt.title("Clustering of SF Parks")
+plt.xlabel("Longitude")
+plt.ylabel("Latitude")
+plt.show()
+
+# For outlier not removed data to compare
+raw_coords = df[['latitude', 'longitude']].dropna()
+
+kmeans = KMeans(n_clusters=5, random_state=42)
+raw_coords['cluster'] = kmeans.fit_predict(raw_coords)
+
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x=raw_coords['longitude'], y=raw_coords['latitude'], hue=raw_coords['cluster'], palette='viridis')
 plt.title("Clustering of SF Parks")
 plt.xlabel("Longitude")
 plt.ylabel("Latitude")
