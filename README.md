@@ -94,17 +94,55 @@ Each row is a stree tree.
 </table>
 
 ## SF Speed Limit Compliance
+
+Statistics on speeding rates and exceedance of speed limit along selected street segments throughout San Francisco from 2004 - 2009.
+
+[SF OpenData SPeed Limit Compliance Data](https://data.sfgov.org/Public-Safety/San-Francisco-Speed-Limit-Compliance/wytw-dqq4/about_data)
+
+613 Rows
+9 Columns
+
+Each row is a segment of a road with speed limit compliance data.
+
 <table border="0">
  <tr>
     <td><b style="font-size:30px">Column Name</b></td>
     <td><b style="font-size:30px">Data Type</b></td>
  </tr>
  <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
+    <td>CNN</td>
+    <td>Number</td>
+ </tr>
+  <tr>
+    <td>the_geom</td>
+    <td>Line</td>
+ </tr>
+  <tr>
+    <td>SpeedLimit</td>
+    <td>Number</td>
+ </tr>
+  <tr>
+    <td>STREETNAME</td>
+    <td>Text</td>
+ </tr>
+  <tr>
+    <td>Over_pct</td>
+    <td>Number</td>
+ </tr>
+  <tr>
+    <td>O5mph_pct</td>
+    <td>Number</td>
+ </tr>
+  <tr>
+    <td>Speed_avg</td>
+    <td>Number</td>
+ </tr>
+  <tr>
+    <td>SpeedO_avg</td>
+    <td>Number</td>
+ </tr>
+  <tr>
+    <td>Spd5O_avg</td>
+    <td>Number</td>
  </tr>
 </table>
-
-| Test | Table |
-| -------- | -------- |
-| text1 | text2 |
