@@ -189,7 +189,7 @@ The interactive map is provided as an html provided which can be opened in your 
 
 ### Results
 
-Screenshots from the correlation process are included in the screenshots folder. The map was an semi-efficient interactive tool to discover and correlations. At first I thought to notice some correlations but then I looked at the road on Google Maps 3D and saw that it might be to the road features as I kind of thought. Then, the correlation heat map along with the scatter plot showed there there is little to <b>no</b> correlation with people speeding to the nearby trees along the road. I partially expected this, but also thought there might be at least a lot. The correlation with the speed data to the nearby trees averaged -0.115, or little to no correlation as the value is closer to 0.
+Screenshots from the correlation process are included in the screenshots folder. The map was a semi-efficient interactive tool to discover any correlations. At first I thoughtI noticed some correlations, but then I looked at the road on Google Maps 3D and saw that it might be contributed to the road features as I kind of thought. Then, the correlation heat map along with the scatter plot showed there there is little to <b>no</b> correlation with people speeding to the nearby trees along the road. I partially expected this, but also thought there might be at least some correlatin. The correlation with the speed data to the nearby trees averaged -0.115; little to no correlation as the value is closer to 0.
 
 The Clement Street picture truly shoes that trees have no correlation to slowing people down! 83% drove over the limit but there are a lot of trees.
 
