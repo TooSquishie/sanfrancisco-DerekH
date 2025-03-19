@@ -187,6 +187,12 @@ The interactive map is provided as an html provided which can be opened in your 
 
 2. The trees include data from 1955 to 2024. As a naive remedy, I removed all the trees planted after 2008 since those trees wouldn't be mature or existent.
 
+### How to run
+
+Download process_data.py and tree_correlation.py. Run process_data.py first to build the csv that is necessary for tree_correlation.py. Load in the csvs for both scripts by putting the file path into the read_csv functions. Then run process_data.py to produce the csv, put that file path in tree_correlation.py and then run it.
+
+Prereqs: pandas, seaborn, matplotlib, scikit-learn, folium, numpy, scipy
+
 ### Results
 
 Screenshots from the correlation process are included in the screenshots folder. The map was a semi-efficient interactive tool to discover any correlations. At first I thoughtI noticed some correlations, but then I looked at the road on Google Maps 3D and saw that it might be contributed to the road features as I kind of thought. Then, the correlation heat map along with the scatter plot showed there there is little to <b>no</b> correlation with people speeding to the nearby trees along the road. I partially expected this, but also thought there might be at least some correlatin. The correlation with the speed data to the nearby trees averaged -0.115; little to no correlation as the value is closer to 0.
