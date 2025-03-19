@@ -170,3 +170,30 @@ Each row is a segment of a road with speed limit compliance data.
     <td>Number</td>
  </tr>
 </table>
+
+## Implentation
+
+This section includes my implentation method and the results.
+
+### Method
+
+I used one script to process the data then map trees and roads. The other is for the correlation process. 
+
+The interactive map is provided as an html provided which can be opened in your browser. This was done to provide a visual method of finding tree to speed correlation. Each road marker has some information on the speed of that road.
+
+<b>Challenges:</b>
+
+1. The road speed limit data has the roads as line geometry. To solve this I found the centroid point of the line segments to use as a marker for the map. *Most curved roads would cause the centroid to be off the road. 
+
+2. The trees include data from 1955 to 2024. As a naive remedy, I removed all the trees planted after 2008 since those trees wouldn't be mature or existent.
+
+### Results
+
+Screenshots from the correlation process are included in the screenshots folder. The map was an semi-efficient interactive tool to discover and correlations. At first I thought to notice some correlations but then I looked at the road on Google Maps 3D and saw that it might be to the road features as I kind of thought. Then, the correlation heat map along with the scatter plot showed there there is little to <b>no</b> correlation with people speeding to the nearby trees along the road. I partially expected this, but also thought there might be at least a lot. The correlation with the speed data to the nearby trees averaged -0.115, or little to no correlation as the value is closer to 0.
+
+The Clement Street picture truly shoes that trees have no correlation to slowing people down! 83% drove over the limit but there are a lot of trees.
+
+## Conclusion
+
+Overall this was an interesting task to work on and was interesting to me that most of the process is working on the data before doing any analyzing.
+
